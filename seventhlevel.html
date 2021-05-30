@@ -1,71 +1,75 @@
 
 <html>
     <head>
-<style>
-     body{
-            font-family: "Times New Roman", Times, serif;
+        <style>
+             body{
+                font-family: "Times New Roman", Times, serif;
             background-image: url("https://c4.wallpaperflare.com/wallpaper/930/316/885/gradient-simple-background-colorful-abstract-wallpaper-preview.jpg");
             background-repeat: no-repeat;
             background-size: cover;
           }
-         
+
           #triangle1{
-        
+             width: 0;
+            height: 0;
+            border-top: 150px solid orange;
+            border-right: 150px solid transparent;
+          }
+          #triangle2{
+           
+            margin-right: 0%;
+            margin-top: 0%;
+          
+            width: 0;
+	       height: 0;
+	      border-bottom: 90px solid orange;
+           border-left: 90px solid transparent;
+          }
+          #triangle3{
+           
             width: 0;
             height: 0;
-            border-top: 200px solid orange;
-            border-right: 200px solid transparent;
+            border-bottom: 140px solid orange;
+            border-right: 140px solid transparent;
+          }
+          #triangle4{
+            margin-left: 15%;
+            margin-top: 0%;
+            width: 0;
+            height: 0;
+            border-top: 100px solid orange;
+            border-right: 100px solid transparent;
+          }
+          #paralell{
+            
+            margin-left: 80%;
+            margin-top: -15%;
+            width:80px; 
+            height:85px;  
+            background:orange;
+            transform: skewX(-35deg);
           }
           #square{
-            position: absolute;
-            height: 100px;
-            width: 100px;
+            margin-left: 60%;
+            margin-top: -20%;
+            height: 80px;
+            width: 80px;
             background-color: orange;
-            transform: rotate(-2deg);
-
-          }
-
-          #triangle2{
+          } 
+          #triangle5{
+            margin-left: 40%;
+            margin-top: -40%;
             width: 0;
-            height: 0;
-            border-right: 160px solid orange;
-            border-top: 50px solid transparent;
-            border-bottom: 50px solid transparent;
-            transform: rotate(35deg);
+	       height: 0;
+	       border-bottom: 80px solid orange;
+           border-right: 80px solid transparent;
           }
 
-          #paralell{
-            position: absolute;
-            width: 100px;
-            height:100px; 
-            background:orange;
-            transform: skewY(-55deg);
-          }
-
-          #triangle3{
-            position: absolute;    
-            width: 0;
-            height: 0;
-            border-bottom: 100px solid orange;
-            border-left: 100px solid transparent;
-            transform: skewY(-5deg);
-          }
-
-          #triangle4{
-            position: absolute;
-            width: 0;
-            height: 0;
-            border-left: 80px solid orange;
-            border-top: 80px solid transparent;
-            border-bottom: 80px solid transparent;
-     
-          }
-    
-    .canvas {
-     outline-style: solid;
+            .canvas {
+        outline-style: solid;
     outline-color: black;
     outline-width: 10px;
-     position:absolute;
+      position:absolute;
 width: 650px;
 height: 600px;
 background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -88,67 +92,69 @@ right: 260px;
 
 #dropzone_1{
     position: absolute;
-    left: 4%;
-    top: 5%;
+      margin-left: 29%;
+      margin-top: 2%;
     width: 0;
-    height: 0;
-	border-top: 200px solid rgb(209, 171, 99);
-    border-right: 200px solid transparent;
-          
-   
-}
+	height: 0;
+	border-top: 150px solid rgb(209, 171, 99);
+  border-right: 150px solid transparent;}
+
 #dropzone_2{
-    position: absolute;
-    left: 38%;
-    top: 11%;
-    height: 100px;
-    width: 100px;
-    background-color: rgb(209, 171, 99);
-    transform: rotate(-2deg);
+    margin-left: 35%;
+            margin-top: 8%;
+           position: absolute;
+            width: 0;
+	       height: 0;
+	      border-bottom: 90px solid rgb(209, 171, 99);
+           border-left: 90px solid transparent;
 }
 #dropzone_3{
     position: absolute;
-    left: 16%;
-    top: 20%;
+    margin-left: 35%;
+     margin-top: 22%;
     width: 0;
 	height: 0;
-	border-right: 160px solid rgb(209, 171, 99);
-	border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-    transform: rotate(35deg);
-   
+	border-bottom: 140px solid rgb(209, 171, 99);
+  border-right: 140px solid transparent;
 }
+
 #dropzone_4{
     position: absolute;
-     left: 25%;
-     top: 42%;
-     width: 100px;
-     height:100px; 
-     background:rgb(209, 171, 99);
-     transform: skewY(-55deg);
-}
+      margin-left: 29%;
+      margin-top: 45%;
+    width: 0;
+	height: 5;
+	border-top: 100px solid rgb(209, 171, 99);
+  border-right: 100px solid transparent;}
+
+
 #dropzone_5{
     position: absolute;
-    top: 68%;
-    left: 12%;
-    width: 0;
-	height: 0;
-	border-bottom: 100px solid rgb(209, 171, 99);
-    border-left: 100px solid transparent;
-    transform: skewY(-5deg);
-  
-}
-#dropzone_6{
-    top: 50%;
-    left: 35%;
-    position: absolute;
-    width: 0;
-	height: 0;
-     border-left: 80px solid rgb(209, 171, 99);
-	border-top: 80px solid transparent;
-    border-bottom: 80px solid transparent;
+    margin-left: 42%;
+      margin-top: 45%;
+    width:80px; 
+     height:85px; 
+     background:rgb(209, 171, 99);
+     transform: skewX(-35deg);
     
 }
+#dropzone_6{
+    margin-left: 37%;
+      margin-top: 59%;
+    height: 80px;
+  width: 80px;
+  background-color: rgb(209, 171, 99);
+}
+#dropzone_7{
+    position: absolute;
+    margin-left: 37%;
+     margin-top: 1%;
+    width: 0;
+	height: 0;
+	border-bottom: 80px solid rgb(209, 171, 99);
+  border-right: 80px solid transparent;
+}
+
 a {
   position: relative;
   display: block;
@@ -251,7 +257,7 @@ event.preventDefault();
 if ( event.target.className == "dropzone_1" ) {
 if(dragged.className=="triangle1"){
 end=end+1;
-if(end==6){
+if(end==7){
 var el = document.getElementById("a");
 el.style.visibility="visible";
 
@@ -265,61 +271,29 @@ event.target.dataTransfer(dragged);
 }
 }
 if ( event.target.className == "dropzone_2" ) {
-if(dragged.className=="square"){
+if(dragged.className=="triangle2"){
 end=end+1;
-if(end==6){
+if(end==7){
 var el = document.getElementById("a");
 el.style.visibility="visible";
 
 }
 var el = document.getElementById("dropzone_2");
-  el.style.backgroundColor= "orange";
+  el.style.borderBottomColor= "orange";
 dragged.parentNode.removeChild(dragged);
 event.target.setData(dragged);
 event.target.dataTransfer(dragged);
 }
 }
 if ( event.target.className == "dropzone_3" ) {
-if(dragged.className=="triangle2"){
+if(dragged.className=="triangle3"){
 end=end+1;
-if(end==6){
+if(end==7){
 var el = document.getElementById("a");
 el.style.visibility="visible";
 
 }
 var el = document.getElementById("dropzone_3");
-  el.style.borderRightColor= "orange";
-dragged.parentNode.removeChild(dragged);
-event.target.setData(dragged);
-event.target.dataTransfer(dragged);
-}
-
-}
-if ( event.target.className == "dropzone_4" ) {
-if(dragged.className=="paralell"){
-end=end+1;
-if(end==6){
-var el = document.getElementById("a");
-el.style.visibility="visible";
-
-}
-var el = document.getElementById("dropzone_4");
-  el.style.backgroundColor= "orange";
-dragged.parentNode.removeChild(dragged);
-event.target.setData(dragged);
-event.target.dataTransfer(dragged);
-}
-}
-
-if ( event.target.className == "dropzone_5" ) {
-if(dragged.className=="triangle3"){
-end=end+1;
-if(end==6){
-var el = document.getElementById("a");
-el.style.visibility="visible";
-
-}
-var el = document.getElementById("dropzone_5");
   el.style.borderBottomColor= "orange";
 dragged.parentNode.removeChild(dragged);
 event.target.setData(dragged);
@@ -327,49 +301,101 @@ event.target.dataTransfer(dragged);
 }
 
 }
-if ( event.target.className == "dropzone_6" ) {
+if ( event.target.className == "dropzone_4" ) {
 if(dragged.className=="triangle4"){
 end=end+1;
-if(end==6){
+if(end==7){
 var el = document.getElementById("a");
 el.style.visibility="visible";
 
 }
-var el = document.getElementById("dropzone_6");
-  el.style.borderLeftColor= "orange";
+var el = document.getElementById("dropzone_4");
+  el.style.borderTopColor= "orange";
+dragged.parentNode.removeChild(dragged);
+event.target.setData(dragged);
+event.target.dataTransfer(dragged);
+}
+}
+
+if ( event.target.className == "dropzone_5" ) {
+if(dragged.className=="paralell"){
+end=end+1;
+if(end==7){
+var el = document.getElementById("a");
+el.style.visibility="visible";
+
+}
+var el = document.getElementById("dropzone_5");
+  el.style.backgroundColor= "orange";
 dragged.parentNode.removeChild(dragged);
 event.target.setData(dragged);
 event.target.dataTransfer(dragged);
 }
 
+}
+if ( event.target.className == "dropzone_6" ) {
+if(dragged.className=="square"){
+end=end+1;
+if(end==7){
+var el = document.getElementById("a");
+el.style.visibility="visible";
+
+}
+var el = document.getElementById("dropzone_6");
+  el.style.backgroundColor= "orange";
+dragged.parentNode.removeChild(dragged);
+event.target.setData(dragged);
+event.target.dataTransfer(dragged);
+}
+
+}
+
+if ( event.target.className == "dropzone_7" ) {
+if(dragged.className=="triangle5"){
+end=end+1;
+if(end==7){
+var el = document.getElementById("a");
+el.style.visibility="visible";
+
+}
+var el = document.getElementById("dropzone_7");
+  el.style.borderBottomColor= "orange";
+dragged.parentNode.removeChild(dragged);
+event.target.setData(dragged);
+event.target.dataTransfer(dragged);
+}
 
 }
 }, false);
-</script>
+        
+
+        </script>
     </head>
     <body>
-        <a id="a" style="visibility: hidden; position: absolute; right: 5%; top: 45%;" href="thirdlevel.html">Next Level</a>
+        <a id="a" style="visibility: hidden; position: absolute; right: 5%; top: 45%;" href="eightlevel.html">Next Level</a>
         <div  style=" margin-top: 50px; width: 600px; height:600px; outline-style: solid;
         outline-color: black;
         outline-width: 10px;">
-        <div class="triangle1" id="triangle1" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
-        <div class="square" id="square" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
-        <div class="triangle2" id="triangle2" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
-        <div class="paralell" id="paralell" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
-        <div class="triangle3" id="triangle3" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
-        <div class="triangle4" id="triangle4" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')" ></div>
-     
-        
-        </div>
+
+<div class="triangle1" id="triangle1" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
+<div class="triangle2" id="triangle2" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
+<div class="triangle3" id="triangle3" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
+<div class="triangle4" id="triangle4" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
+<div class="paralell" id="paralell" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
+<div class="square" id="square" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')" ></div>
+<div class="triangle5" id="triangle5" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')" ></div>
+
+
+    </div>
 
         <div class="canvas">
-        <div class="dropzone_1" id="dropzone_1"></div>
-        <div class="dropzone_2" id="dropzone_2"></div>
-        <div class="dropzone_3" id="dropzone_3"></div>
-        <div class="dropzone_4" id="dropzone_4"></div>
-        <div class="dropzone_5" id="dropzone_5" ></div>
-        <div class="dropzone_6" id="dropzone_6" ></div>
-    </div>
-        
+            <div class="dropzone_1" id="dropzone_1"></div>
+            <div class="dropzone_2" id="dropzone_2"></div>
+            <div class="dropzone_3" id="dropzone_3"></div>
+            <div  class="dropzone_4" id="dropzone_4"></div>
+            <div  class="dropzone_5" id="dropzone_5"></div>
+            <div  class="dropzone_6" id="dropzone_6"></div>
+            <div class="dropzone_7" id="dropzone_7"></div>
+                    </div>
     </body>
 </html>
